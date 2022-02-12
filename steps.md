@@ -75,6 +75,7 @@
      - POST /login
      - POST /logout
    - default home page
+
      - GET /resources
 
    - **drop-down form**
@@ -127,3 +128,12 @@
 
 - How best to group routes into different files?
 - Delete branch after it has been merged?
+- Directory structure - bin, lib
+- api routes to pull in data from db - need separate route for each query or multiple query per route?
+- should we separate queries into different files? (index.js)
+
+### Outline
+
+- server.js calls .env
+- db/index.js called by routes/\*
+- server.js calls those routes
